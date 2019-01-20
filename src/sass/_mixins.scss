@@ -1,0 +1,9 @@
+@mixin space-span {
+  flex: 1 1 auto;
+}
+
+@mixin container-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
