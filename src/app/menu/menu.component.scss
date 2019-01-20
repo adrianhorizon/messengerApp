@@ -1,0 +1,43 @@
+@import '../../../src/sass/variables';
+@import '../../../src/sass/mixins';
+
+.menu-view {
+
+  .logo-container {
+      cursor: pointer;
+      padding: 0 10px;
+      &:focus {
+          outline: none;
+      }
+  }
+
+  .main-logo {
+    width: 60px;
+  }
+  .menu-container {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-image: linear-gradient(110deg, $colorPrimary 1%, #00aaff 100%);
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
+    z-index: 9;
+  }
+  
+  .menu-li {
+    float: left;
+  }
+  
+  .menu-li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+
+    &:hover{
+        color: hsla(0,0%,100%,.5);
+    }
+  }
+
+}
