@@ -12,7 +12,6 @@ const routes: Routes = [
   { path: 'conversation/:user_id', component: ConversationComponent },
   { path: 'profile', component: ProfileComponent } 
 ];
-
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]

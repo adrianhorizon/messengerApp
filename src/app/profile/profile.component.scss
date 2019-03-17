@@ -1,0 +1,94 @@
+@import '../../../src/sass/variables';
+@import '../../../src/sass/mixins';
+
+.profile-container {
+
+  .avatar-img {
+    width: 100px;
+    border-radius: 25%;
+  }
+
+  .container-photo {
+      margin-top: 24px;
+  }
+
+  .custom-file-upload {
+    background: -webkit-linear-gradient(-55deg, $colorButtonGreen, #00bb6e);
+    color: white;
+    margin-top: 8px;
+    display: inline-block;
+    padding: 5px 12px;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+
+  input[type="file"] {
+    display: none;
+  }
+
+  .section {
+    clear: both;
+    margin: 0px;
+    grid-gap: 1vw;
+    padding: 1vw;
+  }
+
+  .col {
+    display: block;
+    float: left;
+    margin: 1% 0 1% 1.8%;
+  }
+
+  .col:first-child {
+    margin-left: 50;
+  }
+
+  .group:before,
+  .group:after {
+    content: "";
+    display: table;
+  }
+
+  .group:after {
+    clear: both;
+  }
+
+  .group {
+    zoom: 1;
+  }
+
+  .span_2_of_2 {
+    width: 100%;
+  }
+
+  .span_1_of_2 {
+    width: 30%;
+  }
+
+  .span_1_of_2:first-child {
+    width: 15%;
+  }
+
+  @media only screen and (max-width: $layout-xs) {
+
+    .col {
+      margin: 1% 0 1% 0%;
+    }
+  }
+
+  @media screen and (max-width: $layout-xs) {
+
+    .span_2_of_2,
+    .span_1_of_2 {
+      width: 100%;
+    }
+
+    .span_1_of_2:first-child {
+      width: 100%;
+    }
+
+    .input-form {
+      width: 100%;
+    }
+  }
+}

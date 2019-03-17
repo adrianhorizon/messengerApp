@@ -1,3 +1,56 @@
-<p>
-  {{user | json}}
-</p>
+<div class="container-conversation">
+  <div class="home-conversation">
+    <div class="section group">
+      <div class="col span_1_of_2">
+        <img class="avatar-img avatar-frame-on-line" src="assets/img/generic_avatar.png" alt="generic_avatar">
+      </div>
+      <div class="col span_1_of_2">
+        <div>
+          <h3>{{user.nick}} - {{user.status}}</h3>
+          <span>{{user.subnick}}</span>
+          <hr>
+        </div>
+        <div class="container-bubble">
+          <div class="from-me bubble-div">
+            <p>Hey there! What's up?</p>
+          </div>
+          <div class="clear"></div>
+          <div class="from-them bubble-div">
+            <p>Checking out iOS7 you know..</p>
+          </div>
+          <div class="clear"></div>
+          <div class="from-me bubble-div">
+            <p>Check out this bubble!asomsaoasosaksaosakosaoska</p>
+          </div>
+          <div class="clear"></div>
+          <div class="from-them bubble-div">
+            <p>It's pretty cool!</p>
+          </div>
+          <div class="clear"></div>
+          <div class="from-me bubble-div">
+            <p>Yeah it's pure CSS &amp; HTML</p>
+          </div>
+          <div class="clear"></div>
+          <div class="from-them bubble-div">
+            <p>Wow that's impressive. But what's even more impressive is that this bubble is really high.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section group">
+      <div class="footer">
+        <div class="col span_1_of_2">
+          <img class="avatar-img avatar-frame-on-line" src="assets/img/generic_avatar.png" alt="generic_avatar">
+        </div>
+        <div class="col span_1_of_2">
+          <div>
+            <textarea class="container-textarea" placeholder="Escribe un mensaje" rows="4" name="comment[text]"
+              autocomplete="off" role="textbox" aria-autocomplete="list" aria-haspopup="true"></textarea>
+            <br>
+            <button>Enviar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

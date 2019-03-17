@@ -36,14 +36,6 @@
     @include container-center;
   }
 
-  .avatar-frame-off-line {
-    background: rgba(242, 246, 248, 1);
-    background-image: linear-gradient(to right, rgb(210, 214, 226) 30%, rgb(209, 213, 225) 70%);
-    padding: 5px;
-    border-radius: 10px;
-    border: 1px solid white;
-  }
-
   .avatar-img {
     margin-top: 16px;
     width: 100px;
@@ -101,7 +93,7 @@
     margin-top: 24px;
     margin-bottom: 24px;
     border: none;
-	border-radius: 20px;
+    border-radius: 20px;
     padding: 10px 10px;
     color: #ffffff;
     background-color: $colorButtonGreen;
@@ -124,10 +116,10 @@
     background-color: $colorButtonBlue;
 
     &:hover {
-        background-color: $colorButtonBlue;
-        opacity: 0.6;
-        transition-duration: .4s;
-        transition-delay: .4s;
-      }
+      background-color: $colorButtonBlue;
+      opacity: 0.6;
+      transition-duration: .4s;
+      transition-delay: .4s;
+    }
   }
 }

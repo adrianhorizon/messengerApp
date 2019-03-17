@@ -1,3 +1,62 @@
-.status-logo {
+@import '../../../src/sass/variables';
+@import '../../../src/sass/mixins';
+
+.container-home {
+
+  @media screen and (max-width: $layout-xs) {
+
+    .left-div,
+    .right-div {
+      max-width: 100%;
+    }
+  }
+
+  .view-home {
+    background-image: url('/assets/img/msnbg.jpg');
+    background-size: contain;
+    background-repeat: repeat-x;
+    background-color: #ffffff;
+  }
+
+
+  .left-div {
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  .right-div {
+    display: inline-block;
+    text-align: left;
+    margin: 15px;
+  }
+
+  .status-logo {
     width: 26px;
+  }
+
+  .avatar-img {
+    margin-top: 16px;
+    width: 100px;
+    border-radius: 25%;
+  }
+
+  .view-list {
+    padding: 15px;
+  }
+
+  img.icon {
+    width: 30px;
+    vertical-align: middle;
+    margin: 10px;
+  }
+
+  .input-style {
+    max-width: 100%;
+    width: 90%;
+    padding: 10px 10px;
+  }
+
+  .container-user {
+    margin-top: 8px;
+  }
 }
