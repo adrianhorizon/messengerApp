@@ -10,11 +10,11 @@
         <p *ngIf="operation == 'register'" class="parrafe-container">Ya tienes una cuenta<a (click)="operation = 'login'" class="links-container"> ingresa aqui</a></p>
         <p *ngIf="operation == 'login'" class="parrafe-container">No tienes una cuenta<a (click)="operation = 'register'" class="links-container"> Registrate</a></p>
         <div>
-          <input class="input-container" type="text" placeholder="Ingrese email"><br>
-          <input class="input-container" type="password" placeholder="Ingrese contraseña">
-          <input *ngIf="operation == 'register'" class="input-container" type="text" placeholder="Ingrese nickname">
-          <button *ngIf="operation == 'login'" class="button-login" type="button">Iniciar sesión</button>
-          <button *ngIf="operation == 'register'" class="button-register" type="button">Registrate</button>
+          <input class="input-container" type="text" [(ngModel)]="email" placeholder="Ingrese email"><br>
+          <input class="input-container" type="password" [(ngModel)]="password" placeholder="Ingrese contraseña">
+          <input class="input-container" type="text" [(ngModel)]="nick" placeholder="Ingrese nickname" *ngIf="operation == 'register'">
+          <button *ngIf="operation == 'login'" class="button-login" type="button" (click)="login()" >Iniciar sesión</button>
+          <button *ngIf="operation == 'register'" class="button-register" type="button" (click)="register()" >Registrate</button>
         </div>
       </div>
     </div>

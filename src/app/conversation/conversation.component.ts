@@ -13,7 +13,14 @@ export class ConversationComponent implements OnInit {
   user: User;
   constructor(public activatedRoute: ActivatedRoute, public userService: UserService) {
     this.id = activatedRoute.snapshot.params['user_id'];
-    this.user = this.userService.getUserById(this.id);
+    this.userService.getUsersById(this.id)
+    .valueChanges().subscribe(
+      (data: User) => {
+        this.user = data;    
+      }, (err) => {
+        console.log(err)
+      }
+    );
   }
 
   ngOnInit() {

@@ -11,6 +11,8 @@
         <span>
           < Escribe un mensaje personal>
         </span>
+        <br>
+        <a (click)="logout()">cerrar sesion</a>
       </div>
     </div>
   </div>
@@ -22,9 +24,9 @@
     </div>
   <hr>
     <br>
-    <b>Amigos ({{friends.length}} / {{friends.length}})</b>
+    <b *ngIf="friends">Amigos ({{friends.length}} / {{friends.length}})</b>
     <ng-container *ngFor="let user of friends | search: query; let i = index;">
-      <div class="container-user" routerLink="/conversation/{{user.id}}">
+      <div class="container-user" routerLink="/conversation/{{user.uid}}">
         <img class="status-logo" src="assets/img/logo_live_{{user.status}}.png" alt="status">
         <b>{{user.nick}} - {{user.subnick || 'No subnick'}}</b>
         <small> {{user.email}}</small>
